@@ -26,9 +26,10 @@ function CareScale({ scaleValue, careType }) {
   );
 }
 
-export function PlantItem({ name, cover, id, light, water }) {
+export function PlantItem({ name, cover, price, light, water }) {
   return (
-    <li key={id} className="lmj-plant-item">
+    <li className="lmj-plant-item">
+      <span className="lmj-plant-item-price">{price}€</span>
       <img className="lmj-plant-item-cover" src={cover} alt={`${name} cover`} />
       {name}
       <div>
