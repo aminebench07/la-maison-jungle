@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "../styles/Cart.css";
 function Cart({ cart, setCart }) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const total = cart.reduce(
     (acc, currentPlant) => acc + currentPlant.price * currentPlant.amount,
     0
