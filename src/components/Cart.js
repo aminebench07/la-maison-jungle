@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import "../styles/Cart.css";
+import { CartPlant } from "./CartPlant";
+
 function Cart({ cart, setCart }) {
   const [isOpen, setIsOpen] = useState(true);
   const total = cart.reduce(
@@ -22,9 +24,14 @@ function Cart({ cart, setCart }) {
       <h2>Panier</h2>
 
       {cart.map(({ name, price, amount }) => (
-        <div key={name}>
-          {name} {price}€ x{amount}
-        </div>
+        <CartPlant
+          cart={cart}
+          setCart={setCart}
+          key={name}
+          amount={amount}
+          name={name}
+          price={price}
+        />
       ))}
       <h3>Total : {total}€</h3>
       <button onClick={() => setCart([])}>Vider le panier</button>

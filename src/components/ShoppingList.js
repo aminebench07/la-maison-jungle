@@ -3,6 +3,7 @@ import { plantList } from "../datas/PlantList";
 import "../styles/ShoppingList.css";
 import { Categories } from "./Categories";
 import { PlantItem } from "./PlantItem";
+import { addToCart } from "../Utils";
 
 function ShoppingList({ cart, setCart }) {
   const [selectedCategory, setSelectedCategory] = useState("");
@@ -12,21 +13,6 @@ function ShoppingList({ cart, setCart }) {
     }
     return acc;
   }, []);
-
-  function addToCart(plantName, plantPrice) {
-    const plantAdded = cart.find((article) => article.name === plantName);
-    if (plantAdded) {
-      const cartWithoutPlantAdded = cart.filter(
-        (article) => article.name !== plantName
-      );
-      setCart([
-        ...cartWithoutPlantAdded,
-        { name: plantName, price: plantPrice, amount: plantAdded.amount + 1 },
-      ]);
-    } else {
-      setCart(cart.concat([{ name: plantName, price: plantPrice, amount: 1 }]));
-    }
-  }
 
   return (
     <div className="lmj-shopping-list">
@@ -47,7 +33,11 @@ function ShoppingList({ cart, setCart }) {
                   water={plant.water}
                   cover={plant.cover}
                 />
-                <button onClick={() => addToCart(plant.name, plant.price)}>
+                <button
+                  onClick={() =>
+                    addToCart(cart, setCart, plant.name, plant.price)
+                  }
+                >
                   Ajouter
                 </button>
               </div>

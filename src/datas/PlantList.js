@@ -10,7 +10,7 @@ import cactus from '../assets/cactus.jpg'
 
 export const plantList = [
 	{
-		name: 'monstera',
+		name: 'Monstera',
 		category: 'classique',
 		id: '1ed',
 		light: 2,
@@ -19,7 +19,7 @@ export const plantList = [
 		price: 15
 	},
 	{
-		name: 'ficus lyrata',
+		name: 'Ficus Lyrata',
 		category: 'classique',
 		id: '2ab',
 		light: 3,
@@ -29,7 +29,7 @@ export const plantList = [
 	},
 
 	{
-		name: 'pothos argenté',
+		name: 'Pothos Argenté',
 		category: 'classique',
 		id: '3sd',
 		light: 1,
@@ -39,7 +39,7 @@ export const plantList = [
 		price: 9
 	},
 	{
-		name: 'calathea',
+		name: 'Calathea',
 		category: 'classique',
 		id: '4kk',
 		light: 2,
@@ -49,7 +49,7 @@ export const plantList = [
 		price: 20
 	},
 	{
-		name: 'olivier',
+		name: 'Olivier',
 		category: 'extérieur',
 		id: '5pl',
 		light: 3,
@@ -59,7 +59,7 @@ export const plantList = [
 	},
 
 	{
-		name: 'cactus',
+		name: 'Cactus',
 		category: 'plante grasse',
 		id: '8fp',
 		light: 2,
@@ -68,7 +68,7 @@ export const plantList = [
 		price: 6
 	},
 	{
-		name: 'basilique',
+		name: 'Basilique',
 		category: 'extérieur',
 		id: '7ie',
 		light: 2,
@@ -77,7 +77,7 @@ export const plantList = [
 		price: 5
 	},
 	{
-		name: 'succulente',
+		name: 'Succulente',
 		category: 'plante grasse',
 		id: '9vn',
 		light: 2,
@@ -87,7 +87,7 @@ export const plantList = [
 	},
 
 	{
-		name: 'menthe',
+		name: 'Menthe',
 		category: 'extérieur',
 		id: '6uo',
 		light: 2,
