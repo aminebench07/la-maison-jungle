@@ -1,0 +1,18 @@
+.lmj-amount-cart-plant {
+  width: fit-content;
+  border: solid;
+  border-color: black;
+  border-radius: 0.5em;
+  display: flex;
+  gap: 0.5em;
+  padding: 0.5em;
+}
+
+.lmj-button-cart-plant {
+  height: 2em;
+  width: 2em;
+  background-color: rgb(90, 250, 111);
+}
+.trash-icon {
+  height: 0.75em;
+}
